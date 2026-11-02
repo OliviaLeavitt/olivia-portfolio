@@ -1,4 +1,4 @@
-﻿# Olivia Portfolio
+# Olivia Portfolio
 
 Olivia Leavitt's personal portfolio, built with React, TypeScript, and Vite.
 Includes About Me, the Livletics project, and a GitHub contact link.
@@ -34,5 +34,3 @@ is `dist`. No backend is required.
 
 Add a verified LinkedIn URL and resume when ready; the current contact link
 uses Olivia's GitHub profile.
-
-
