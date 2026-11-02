@@ -14,3 +14,6 @@ section { margin-top: 80px; scroll-margin-top: 24px; }
 .project-link span { padding-left: 4px; }
 @media (max-width: 640px) { .project-grid { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { #root { padding: 40px 20px; } section { margin-top: 56px; } .project { padding: 24px; } }
+
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.live-project-link { padding: 10px 14px; border-radius: 8px; background: #eaf0e9; }

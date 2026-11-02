@@ -37,6 +37,6 @@ The preview command serves that build locally.
 - [Refresh Token Rotation Demo](https://github.com/OliviaLeavitt/refresh-token-rotation-demo)
 
 The portfolio and Livletics have separate repositories and build processes.
-No hosting or AWS connection has been configured for either new site.
-For future static hosting, install with `npm ci`, build with `npm run build`,
-and serve `dist/`. No backend is required for this portfolio.
+`amplify.yml` configures Node 24, installation with `npm ci`, and a static
+production build with `npm run build`. See [deployment settings](DEPLOYMENT.md)
+for the domain plan and verification steps. No backend is required for this portfolio.

@@ -1,8 +1,17 @@
 import './App.css'
 
-const projects = [
+type Project = {
+  name: string
+  repo: string
+  description: string
+  stack: string
+  status: string
+  liveUrl?: string
+}
+
+const projects: Project[] = [
   { name: 'AI Audio Transcriber', repo: 'ai-audio-transcriber', description: 'A team-built audio pipeline with local speech recognition, transcript cleanup, summaries, translation, and document exports. My work includes the cleaner agent and multilingual UI.', stack: 'Python / faster-whisper / Gradio', status: 'Team project - personal portfolio fork' },
-  { name: 'Livletics', repo: 'livletics', description: 'A fitness dashboard prototype with an interactive muscle map, recovery metrics, and a layered frontend architecture.', stack: 'React / TypeScript / Vite', status: 'In development - sample data' },
+  { name: 'Livletics', repo: 'livletics', liveUrl: 'https://livletics.olivialeavitt.com', description: 'A fitness dashboard prototype with an interactive muscle map, recovery metrics, and a layered frontend architecture.', stack: 'React / TypeScript / Vite', status: 'In development - sample data' },
   { name: 'Multiplayer Chess', repo: 'multiplayer-chess', description: 'A terminal chess client and Java server with HTTP APIs, WebSocket gameplay, and MySQL persistence.', stack: 'Java / MySQL / WebSockets', status: 'Software construction course project' },
   { name: 'MealMate Recipes', repo: 'mealmate-recipes', description: 'Saved recipes, a meal-planning calendar, grocery lists, and live chat in a full-stack web app.', stack: 'React / Express / MongoDB', status: 'Web programming course project' },
   { name: 'Community Resource Finder', repo: 'community-resource-finder', description: 'Search for Utah food assistance by city, with typed data access and a sample-data fallback.', stack: 'TypeScript / React / Supabase', status: 'Database course project' },
@@ -33,7 +42,14 @@ function App() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <span className="project-status">{project.status}</span>
-              <a className="project-link" href={'https://github.com/OliviaLeavitt/' + project.repo} aria-label={'View ' + project.name + ' source on GitHub'}>View source on GitHub <span aria-hidden="true">&rarr;</span></a>
+              <div className="project-links">
+                {project.liveUrl && (
+                  <a className="project-link live-project-link" href={project.liveUrl} aria-label={'Open ' + project.name + ' interactive demo'}>
+                    Try Livletics <span aria-hidden="true">&rarr;</span>
+                  </a>
+                )}
+                <a className="project-link" href={'https://github.com/OliviaLeavitt/' + project.repo} aria-label={'View ' + project.name + ' source on GitHub'}>View source on GitHub <span aria-hidden="true">&rarr;</span></a>
+              </div>
             </article>
           ))}
         </div>
