@@ -1,0 +1,16 @@
+﻿:root {
+  font-family: Arial, sans-serif;
+  color: #252525;
+  background: #faf9f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+p { line-height: 1.6; }
+a { color: #415c50; text-underline-offset: 4px; }
+a:hover { color: #252525; }
+a:focus-visible { outline: 2px solid #415c50; outline-offset: 4px; }
+
