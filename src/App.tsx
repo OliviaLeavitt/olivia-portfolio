@@ -1,6 +1,7 @@
 import './App.css'
 
 const projects = [
+  { name: 'AI Audio Transcriber', repo: 'ai-audio-transcriber', description: 'A team-built audio pipeline with local speech recognition, transcript cleanup, summaries, translation, and document exports. My work includes the cleaner agent and multilingual UI.', stack: 'Python / faster-whisper / Gradio', status: 'Team project - personal portfolio fork' },
   { name: 'Livletics', repo: 'livletics', description: 'A fitness dashboard prototype with an interactive muscle map, recovery metrics, and a layered frontend architecture.', stack: 'React / TypeScript / Vite', status: 'In development - sample data' },
   { name: 'Multiplayer Chess', repo: 'multiplayer-chess', description: 'A terminal chess client and Java server with HTTP APIs, WebSocket gameplay, and MySQL persistence.', stack: 'Java / MySQL / WebSockets', status: 'Software construction course project' },
   { name: 'MealMate Recipes', repo: 'mealmate-recipes', description: 'Saved recipes, a meal-planning calendar, grocery lists, and live chat in a full-stack web app.', stack: 'React / Express / MongoDB', status: 'Web programming course project' },

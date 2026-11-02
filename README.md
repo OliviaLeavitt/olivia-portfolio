@@ -1,7 +1,7 @@
 # Olivia Portfolio
 
 My personal software engineering portfolio, built with React, TypeScript, and Vite.
-It introduces my work and links to six selected projects with their implementation
+It introduces my work and links to selected projects with their implementation
 status and course/fork attribution.
 
 ## Local development
@@ -26,6 +26,8 @@ The build checks TypeScript and writes the static website to `dist/`.
 The preview command serves that build locally.
 
 ## Independent project repositories
+
+- [AI Audio Transcriber](https://github.com/OliviaLeavitt/ai-audio-transcriber)
 
 - [Livletics](https://github.com/OliviaLeavitt/livletics)
 - [Multiplayer Chess](https://github.com/OliviaLeavitt/multiplayer-chess)
