@@ -1,36 +1,40 @@
 # Olivia Portfolio
 
-Olivia Leavitt's personal portfolio, built with React, TypeScript, and Vite.
-Includes About Me, the Livletics project, and a GitHub contact link.
+My personal software engineering portfolio, built with React, TypeScript, and Vite.
+It introduces my work and links to six selected projects with their implementation
+status and course/fork attribution.
 
 ## Local development
 
 Requires Node.js 24 LTS and npm.
 
-```powershell
-cd C:\Users\livy9\Projects\olivia-development\portfolio
+~~~sh
 npm ci
 npm run dev
-```
+~~~
 
 Open the Local URL printed by Vite, usually http://localhost:5173/.
 
 ## Production build
 
-```powershell
+~~~sh
 npm run build
 npm run preview
-```
+~~~
 
 The build checks TypeScript and writes the static website to `dist/`.
-`npm run preview` serves that build locally.
+The preview command serves that build locally.
 
-## Hosting status
+## Independent project repositories
 
-No AWS app or hosting resources have been created or connected. Nothing has
-been deployed. When hosting is set up later, the build command is
-`npm run build`, the install command is `npm ci`, and the output directory
-is `dist`. No backend is required.
+- [Livletics](https://github.com/OliviaLeavitt/livletics)
+- [Multiplayer Chess](https://github.com/OliviaLeavitt/multiplayer-chess)
+- [MealMate Recipes](https://github.com/OliviaLeavitt/mealmate-recipes)
+- [Community Resource Finder](https://github.com/OliviaLeavitt/community-resource-finder)
+- [JWT Pizza Web](https://github.com/OliviaLeavitt/jwt-pizza-web) and [API](https://github.com/OliviaLeavitt/jwt-pizza-api)
+- [Refresh Token Rotation Demo](https://github.com/OliviaLeavitt/refresh-token-rotation-demo)
 
-Add a verified LinkedIn URL and resume when ready; the current contact link
-uses Olivia's GitHub profile.
+The portfolio and Livletics have separate repositories and build processes.
+No hosting or AWS connection has been configured for either new site.
+For future static hosting, install with `npm ci`, build with `npm run build`,
+and serve `dist/`. No backend is required for this portfolio.
